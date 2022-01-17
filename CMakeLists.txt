@@ -24,13 +24,13 @@ find_package(std_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
+rosidl_generate_interfaces(clober_msgs 
   "msg/Command.msg"
   "msg/ControllerState.msg"
   "msg/Feedback.msg"
   "msg/MotorState.msg"
   DEPENDENCIES std_msgs
- )
+)
 
 
 if(BUILD_TESTING)
